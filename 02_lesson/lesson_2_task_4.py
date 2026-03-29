@@ -10,5 +10,6 @@ def fizz_buzz(n):
         else:
             print(i)
 
-n = 15
+
+n = 17
 fizz_buzz(n)

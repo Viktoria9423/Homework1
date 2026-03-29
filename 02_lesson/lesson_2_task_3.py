@@ -1,5 +1,7 @@
 def square(a):
-   return a*a
+
+    return a*a
+
 
 Сторона = 12
 Площадь = square(Сторона)

@@ -1,0 +1,58 @@
+Баг №1
+Название: Отсутствует обработка None в методе capitalize
+
+Шаги:
+1. Создать объект StringUtils
+2. Вызвать capitalize(None)
+
+Ожидаемый результат:
+Метод должен корректно обработать None (например, выбросить понятное исключение или вернуть None)
+
+Фактический результат:
+Возникает AttributeError: 'NoneType' object has no attribute 'capitalize'
+
+Приоритет: высокий
+
+
+
+Баг №2
+Название: Отсутствует обработка None в методе trim
+
+Шаги:
+1. Вызвать trim(None)
+
+Фактический результат:
+AttributeError: 'NoneType' object has no attribute 'strip'
+
+
+
+Баг №3
+Название: Отсутствует обработка None в методе to_list
+
+Шаги:
+1. Вызвать to_list(None)
+
+Фактический результат:
+AttributeError: 'NoneType' object has no attribute 'split'
+
+
+
+Баг №4
+Название: Отсутствует обработка None в методе contains
+
+Шаги:
+1. Вызвать contains(None, "a")
+
+Фактический результат:
+TypeError: argument of type 'NoneType' is not iterable
+
+
+
+Баг №5
+Название: Отсутствует обработка None в методе delete_symbol
+
+Шаги:
+1. Вызвать delete_symbol(None, "a")
+
+Фактический результат:
+AttributeError: 'NoneType' object has no attribute 'replace'

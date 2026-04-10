@@ -1,82 +1,58 @@
 Баг №1
-Название: Ошибка при передаче None в метод capitalize
+Название: Отсутствует обработка None в методе capitalize
 
-Шаги для воспроизведения:
+Шаги:
 1. Создать объект StringUtils
-2. Вызвать метод capitalize(None)
+2. Вызвать capitalize(None)
 
 Ожидаемый результат:
-Метод корректно обрабатывает None (например, возвращает None или пустую строку)
+Метод должен корректно обработать None (например, выбросить понятное исключение или вернуть None)
 
 Фактический результат:
-Возникает ошибка AttributeError: 'NoneType' object has no attribute 'capitalize'
+Возникает AttributeError: 'NoneType' object has no attribute 'capitalize'
 
-Приоритет: Высокий
+Приоритет: высокий
 
 
 
 Баг №2
-Название: Ошибка при передаче None в метод trim
+Название: Отсутствует обработка None в методе trim
 
-Шаги для воспроизведения:
-1. Создать объект StringUtils
-2. Вызвать метод trim(None)
-
-Ожидаемый результат:
-Метод корректно обрабатывает None
+Шаги:
+1. Вызвать trim(None)
 
 Фактический результат:
-Возникает ошибка AttributeError: 'NoneType' object has no attribute 'strip'
-
-Приоритет: Высокий
+AttributeError: 'NoneType' object has no attribute 'strip'
 
 
 
 Баг №3
-Название: Ошибка при передаче None в метод to_list
+Название: Отсутствует обработка None в методе to_list
 
-Шаги для воспроизведения:
-1. Создать объект StringUtils
-2. Вызвать метод to_list(None)
-
-Ожидаемый результат:
-Метод корректно обрабатывает None (например, возвращает None или пустой список)
+Шаги:
+1. Вызвать to_list(None)
 
 Фактический результат:
-Возникает ошибка AttributeError: 'NoneType' object has no attribute 'split'
-
-Приоритет: Высокий
+AttributeError: 'NoneType' object has no attribute 'split'
 
 
 
 Баг №4
-Название: Ошибка при передаче None в метод contains
+Название: Отсутствует обработка None в методе contains
 
-Шаги для воспроизведения:
-1. Создать объект StringUtils
-2. Вызвать метод contains(None, "a")
-
-Ожидаемый результат:
-Метод корректно обрабатывает None (например, возвращает False)
+Шаги:
+1. Вызвать contains(None, "a")
 
 Фактический результат:
-Возникает ошибка TypeError: argument of type 'NoneType' is not iterable
-
-Приоритет: Высокий
+TypeError: argument of type 'NoneType' is not iterable
 
 
 
 Баг №5
-Название: Ошибка при передаче None в метод delete_symbol
+Название: Отсутствует обработка None в методе delete_symbol
 
-Шаги для воспроизведения:
-1. Создать объект StringUtils
-2. Вызвать метод delete_symbol(None, "a")
-
-Ожидаемый результат:
-Метод корректно обрабатывает None
+Шаги:
+1. Вызвать delete_symbol(None, "a")
 
 Фактический результат:
-Возникает ошибка AttributeError: 'NoneType' object has no attribute 'replace'
-
-Приоритет: Высокий
+AttributeError: 'NoneType' object has no attribute 'replace'

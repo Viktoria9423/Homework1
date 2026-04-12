@@ -11,6 +11,6 @@ blue_button = driver.find_element(By.CLASS_NAME, "btn-primary")
 blue_button.click()
 
 import time
-time.sleep(5)
+time.sleep(6)
 
 driver.quit()

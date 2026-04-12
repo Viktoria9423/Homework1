@@ -9,12 +9,12 @@ driver.get("http://the-internet.herokuapp.com/inputs")
 input_field = driver.find_element(By.TAG_NAME, "input")
 
 input_field.send_keys("12345")
-time.sleep(1)
+time.sleep(6)
 
 input_field.clear()
-time.sleep(1)
+time.sleep(6)
 
 input_field.send_keys("54321")
-time.sleep(5)
+time.sleep(6)
 
 driver.quit()

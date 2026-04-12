@@ -12,5 +12,5 @@ driver.get("http://uitestingplayground.com/dynamicid")
 button = driver.find_element(By.CSS_SELECTOR, "button.btn-primary")
 button.click()
 
-time.sleep(5)
+time.sleep(6)
 driver.quit()
